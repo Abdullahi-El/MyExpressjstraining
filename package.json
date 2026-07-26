@@ -1,0 +1,17 @@
+{
+    "name": "expressjs",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js"
+    },
+    "dependencies": {
+        "express": "^5.0.0"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.0",
+        "@types/node": "^24.0.0",
+        "typescript": "^5.0.0"
+    }
+}
