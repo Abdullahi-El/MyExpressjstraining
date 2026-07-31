@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>My Express App</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container nav-container">
+        <h1>My Express App</h1>
+
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <p class="small-heading">Node.js • Express • TypeScript</p>
+
+          <h2>Build modern web applications</h2>
+
+          <p class="hero-text">
+            This project uses Express for the backend and HTML, CSS and
+            JavaScript for the frontend.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="button" href="#features">View Features</a>
+
+            <button id="serverButton" class="button secondary-button">
+              Contact Server
+            </button>
+          </div>
+
+          <p id="serverMessage" class="server-message">
+            Press the button to request data from Express.
+          </p>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Application Features</h2>
+
+            <p>
+              The frontend and backend now communicate with each other.
+            </p>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <h3>Express Server</h3>
+
+              <p>
+                Express handles browser requests and returns pages or JSON
+                responses.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>TypeScript</h3>
+
+              <p>
+                TypeScript helps detect errors before the server runs.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Frontend JavaScript</h3>
+
+              <p>
+                JavaScript makes the page interactive and requests data from
+                the server.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section light-section">
+        <div class="container about-content">
+          <h2>About the Project</h2>
+
+          <p>
+            The browser loads the HTML, CSS and JavaScript files from the
+            public folder. JavaScript then sends a request to the Express API.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Contact Form</h2>
+
+            <p>Complete the form below.</p>
+          </div>
+
+          <form id="contactForm" class="contact-form">
+            <label for="name">Name</label>
+
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label for="email">Email</label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="message">Message</label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+
+            <button class="button" type="submit">
+              Submit Form
+            </button>
+
+            <p id="formResult"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="year"></span> My Express App
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
