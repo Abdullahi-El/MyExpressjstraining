@@ -6,10 +6,10 @@ on:
       - main
   workflow_dispatch:
 
-env:
-  AZURE_FUNCTIONAPP_NAME: "Express"
-  AZURE_FUNCTIONAPP_PACKAGE_PATH: "."
-  NODE_VERSION: "22.x"
+#env:
+  #AZURE_FUNCTIONAPP_NAME: "Express"
+  #AZURE_FUNCTIONAPP_PACKAGE_PATH: "."
+  #NODE_VERSION: "22.x"
 
 jobs:
   build-and-deploy:
