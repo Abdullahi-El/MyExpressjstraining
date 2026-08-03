@@ -6,10 +6,10 @@ on:
       - main
   workflow_dispatch:
 
-#env:
-  #AZURE_FUNCTIONAPP_NAME: "Express"
-  #AZURE_FUNCTIONAPP_PACKAGE_PATH: "."
-  #NODE_VERSION: "22.x"
+env:
+  AZURE_FUNCTIONAPP_NAME: "Express"
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: "."
+  NODE_VERSION: "22.x"
 
 jobs:
   build-and-deploy:
@@ -29,10 +29,10 @@ jobs:
         run: npm ci
 
       - name: Build project
-        run: npm run build --if-present
+        run: npm run build 
 
       - name: Run tests
-        run: npm test --if-present
+        run: npm test 
 
       - name: Deploy to Azure Functions
         uses: Azure/functions-action@v1
